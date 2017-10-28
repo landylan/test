@@ -32,7 +32,7 @@ with open(u'static/data/'+filename+'.json') as f:
 read_data = json.loads(read_str)
 
 # print(read_data)
-'''
+#'''
 
 # 建立 session
 Session = sessionmaker(bind=engine)
@@ -45,7 +45,7 @@ iv_rows = [Iv(**i) for i in read_data]
 
 session.add_all(iv_rows)
 session.commit()
-'''
+#'''
 
 print(u"資料列數：%i\n"%session.query(Iv).count())
 
@@ -57,7 +57,7 @@ def inst2dict(inst, delete_id=False):
   for column in inst.__table__.columns:
     dat[column.name] = getattr(inst, column.name)
   if delete_id:
-    dat.pop('iv')
+    dat.pop('id')
   return dat
   
 q_result = [inst2dict(q) for q in q88]
