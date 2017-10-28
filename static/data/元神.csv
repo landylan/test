@@ -1,4 +1,4 @@
-編號,名稱,階級,稀有度,彩蛋,出處,屬性,屬1,屬2,同等級CP,HP/SQRT(LV),攻擊種類,技能名稱,技能屬性,技能值
+id,name,rank,ABC,egg,source,attr,attr1,attr2,CP40,HP_SQRT_LV,skill_scale,skill_name,skill_attr,skill_value
 1,木靈,,C,,,木/毒,木,毒,1117 ,14,,,,
 2,木宿,,B,,,木/毒,木,毒,1814 ,17.44133022,,,,
 3,木神句芒,,S,,,木/毒,木,毒,2860 ,23.27015256,普攻：,疾風閃,木,11
