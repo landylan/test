@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
-engine = create_engine(u'sqlite:///static/data/英雄夢.db', echo=False)
+engine = create_engine(u'sqlite:///英雄夢.db', echo=False)
 
 class Iv(Base):
   __tablename__ = 'iv'
